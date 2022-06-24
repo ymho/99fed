@@ -12,4 +12,4 @@ if [ ! -e  ./idp-1/hospital-2/simplesamlphp ]; then
   mv ./idp-1/hospital-2/simplesamlphp-1.19.5 ./idp-1/hospital-2/simplesamlphp
 fi
 
-docker-compose -f ./docker/docker-compose.yml up -d --build
+docker-compose up -d --build
