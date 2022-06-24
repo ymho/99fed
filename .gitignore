@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+
+idp-1/hospital-1/simplesamlphp/
+idp-1/hospital-2/simplesamlphp/
+mysql/
+nginx/certs/
+nginx/log/
+simplesamlphp-1.19.5.tar.gz
