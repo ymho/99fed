@@ -29,10 +29,18 @@ services:
       context: .
       dockerfile: ./idp-1/hospital-2/Dockerfile
     hostname: hospital2
-#    volumes:
-#      - ../idp-1/hospital-2/simplesamlphp:/var/simplesamlphp/
-#      - ../idp-1/hospital-2/config/simplesamlphp/config.php:/var/simplesamlphp/config/config.php
-#      - ../idp-1/hospital-2/config/apache2/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    expose:
+      - "80"
+    depends_on:
+      - db
+    networks:
+      - fedcommon
+
+  fed:
+    build:
+      context: .
+      dockerfile: ./fed/Dockerfile
+    hostname: fed
     expose:
       - "80"
     depends_on:
