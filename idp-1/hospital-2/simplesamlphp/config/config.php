@@ -48,7 +48,7 @@ $config = [
      * need to compute the right URLs yourself and pass them dynamically
      * to SimpleSAMLphp's API.
      */
-    //'baseURL' => 'https://example.com',
+    'baseURL' => 'https://idp1.hospital-2.example.com',
     //],
 
     /*
@@ -566,7 +566,7 @@ $config = [
      * through https. If the user can access the service through
      * both http and https, this must be set to FALSE.
      */
-    'session.cookie.secure' => true,
+    'session.cookie.secure' => false,
 
     /*
      * Set the SameSite attribute in the cookie.

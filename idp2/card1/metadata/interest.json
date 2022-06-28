@@ -1,0 +1,8 @@
+{
+  "subject": "非保険者",
+  "interest": [],
+  "query": "",
+  "certificate": "",
+  "callback": "https://fed.example.org",
+  "createReq": ""
+}
